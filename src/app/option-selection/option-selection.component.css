@@ -1,0 +1,23 @@
+.whole-alignment{
+    margin-top: 215px;
+}
+
+.quiz-type{
+    text-align: center;
+    font-size: x-large;
+}
+
+.form-alignment{
+    width: 295px;
+    margin: auto;
+    margin-top: 22px;
+    font-size: large;
+}
+
+.margin-bottom-one{
+    margin-bottom: 12px;
+}
+
+.margin-bottom-two{
+    margin-bottom: 24px;
+}

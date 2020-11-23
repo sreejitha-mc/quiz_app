@@ -1,0 +1,25 @@
+<div class="main-wrapper">
+    <div class="container">
+        <h2 class="login-class">Login</h2>
+
+        <div [hidden]="!message">Invalid username or password</div>
+
+        <form #loginForm="ngForm">
+            <div class="form-group bottom-margin-class">
+                <input type="text" class="form-control" id="uname" placeholder="username" name="uname" required [(ngModel)]="user.username"
+                    #name="ngModel">
+                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                    username is required
+                </div>
+            </div>
+            <div class="form-group bottom-margin-class">
+                <input type="password" class="form-control" id="pwd" placeholder="password" name="pswd" required [(ngModel)]="user.password"
+                    #pass="ngModel">
+                <div [hidden]="pass.valid || pass.pristine" class="alert alert-danger">
+                    password is required
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary signin-button" (click)="navigateToOption()" [disabled]="!loginForm.form.valid">Sign in</button>
+        </form>
+    </div>
+</div>

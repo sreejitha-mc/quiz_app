@@ -1,0 +1,32 @@
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+}
+
+.main-wrapper {
+    width: 350px;
+    margin: auto;
+    margin-top: 50%;
+}
+
+.login-class {
+     padding-bottom: 10px;
+}
+
+.bottom-margin-class {
+    margin-bottom: 25px;
+}
+
+.signin-button{
+    margin-top: 7px;
+}
+
+@media (min-width:1025px) { 
+    .main-wrapper {
+        margin-top: 20%;
+    }
+}
+

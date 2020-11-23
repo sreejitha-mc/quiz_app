@@ -1,0 +1,34 @@
+#outer {
+    width: 100%;
+    text-align: center;
+  }
+  .inner {
+    display: inline-block;
+  }
+  #outer2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 4px;
+  }
+  #outer2 .inner {
+    display: inline-block;
+  }
+  #outer3 {
+    width: 100%;
+    text-align: center;
+    padding-top: 4px;
+  }
+  #outer3 .inner {
+    display: inline-block;
+  }
+  #outer4 {
+    width: 100%;
+    text-align: center;
+    padding-top: 4px;
+  }
+  #outer4 .inner {
+    display: inline-block;
+  }
+  #btndiv {
+    margin: 100px 100px 100px 100px;
+  }

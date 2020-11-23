@@ -1,0 +1,4 @@
+export enum OptionType {
+    ANSWER_AFTER_EACH_QN = 'ANSWER_AFTER_EACH_QN',
+    ANSWER_AT_END = 'ANSWER_AT_END'
+}

@@ -1,0 +1,20 @@
+<div class="container whole-alignment">
+    <p class="quiz-type">Select one of the Quiz Type :-</p>
+    <div class="form-alignment">
+        <form #optionForm="ngForm">
+            <div class="form-check margin-bottom-one">
+                <label class="form-check-label" for="radio1">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" [value]="optionAnswerAfterEachQn" [(ngModel)]="selectedoption"
+                        #option1="ngModel" required>Check answer after each question
+                </label>
+            </div>
+            <div class="form-check margin-bottom-two">
+                <label class="form-check-label" for="radio2">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" [value]="optionAtEnd" [(ngModel)]="selectedoption"
+                        #option2="ngModel" required>Check answer at the end
+                </label>
+            </div>
+            <button type="button" class="btn btn-primary" (click)="navigateToSlectedOption()" [disabled]="!optionForm.form.valid">Submit</button>
+        </form>
+    </div>
+</div>
