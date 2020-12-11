@@ -10,65 +10,65 @@
     },
     {
         "id": "2",
-        "question": "test question two",
-        "option1": "opn A",
-        "option2": "opn B",
-        "option3": "opn C",
-        "option4": "opn D",
-        "answer": "opn D"
+        "question": "Which one of the following waves are used by the common TV remote control?",
+        "option1": "Radio waves",
+        "option2": "Lasers",
+        "option3": "Infrared waves",
+        "option4": "Ultrasonic waves",
+        "answer": "Infrared waves"
     },
     {
         "id": "3",
-        "question": "test question three",
-        "option1": "opn A",
-        "option2": "opn B",
-        "option3": "opn C",
-        "option4": "opn D",
-        "answer": "opn B"
+        "question": "Which gas is safe and an effective extinguisher for all confined fires?",
+        "option1": "Nitrogen dioxide",
+        "option2": "Carbon dioxide",
+        "option3": "Sulphur dioxide",
+        "option4": "Nitrous Oxide",
+        "answer": "Carbon dioxide"
     },
     {
         "id": "4",
-        "question": "test question 4",
-        "option1": "opn A",
-        "option2": "opn B",
-        "option3": "opn C",
-        "option4": "opn D",
-        "answer": "opn A"
+        "question": "Which one of the following elements the drum of a Photostat machine is made up of:",
+        "option1": "Aluminium",
+        "option2": "Selenium",
+        "option3": "Barium",
+        "option4": "Caesium",
+        "answer": "Selenium"
     },
     {
         "id": "5",
-        "question": "test question 5",
-        "option1": "opn A",
-        "option2": "opn B",
-        "option3": "opn C",
-        "option4": "opn D",
-        "answer": "opn D"
+        "question": "Which bacteria is responsible for the formation of curd?",
+        "option1": "Lactobacillus Acidophillus",
+        "option2": "Lactic acid bacteria",
+        "option3": "Lactobacillus aureus",
+        "option4": "Bacillus radicicola",
+        "answer": "Lactobacillus Acidophillus"
     },
     {
         "id": "6",
-        "question": "test question 6",
-        "option1": "opn A",
-        "option2": "opn B",
-        "option3": "opn C",
-        "option4": "opn D",
-        "answer": "opn B"
+        "question": "Which one of the following bacteria present in the soil produces a peculiar smell if it rains on perched soil?",
+        "option1": "Staphymycetes",
+        "option2": "Diplomycetes",
+        "option3": "Micrococcus",
+        "option4": "Streptomycetes",
+        "answer": "Streptomycetes"
     },
     {
         "id": "7",
-        "question": "test question 7",
-        "option1": "opn A",
-        "option2": "opn B",
-        "option3": "opn C",
-        "option4": "opn D",
-        "answer": "opn C"
+        "question": "In poorly ventilated buildings which one of the following inert gases can be accumulated?",
+        "option1": "Helium",
+        "option2": "Argon",
+        "option3": "Radon",
+        "option4": "Neon",
+        "answer": "Radon"
     },
     {
         "id": "8",
-        "question": "test question 8",
-        "option1": "opn A",
-        "option2": "opn B",
-        "option3": "opn C",
-        "option4": "opn D",
-        "answer": "opn A"
+        "question": "Honey is sweeter than cane sugar or corn syrup. Which one of the following carbon sugars is responsible for this?",
+        "option1": "Dextrose",
+        "option2": "Levulose",
+        "option3": "Sucrose",
+        "option4": "Fructose",
+        "answer": "Levulose"
     }
 ]
