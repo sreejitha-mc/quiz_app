@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginsService } from '../services/logins.service';
+import { AppDataService } from '../services/app-data.service';
 import { User } from '../model/user.model';
 
 
@@ -17,7 +18,8 @@ export class LoginComponent implements OnInit {
 
     constructor(
         private router: Router,
-        private loginsService: LoginsService
+        private loginsService: LoginsService,
+        private appDataService: AppDataService
     ) { }
 
     ngOnInit(): void {
@@ -25,21 +27,17 @@ export class LoginComponent implements OnInit {
 
     navigateToOption(): void {
 
-        this.loginsService.getLogin().subscribe(
-            (data) => {
-
-                const login = data.find((i) => this.user.username === i.username && this.user.password === i.password
-                );
-                if (login) {
+        this.loginsService.validateLogins(this.user).subscribe(
+            (res) => {
+                if (res) {
+                    this.appDataService.setUserInfo(res);
                     this.router.navigate([`/option-selection`]);
-                }
-                else {
+                } else {
                     this.message = true;
                 }
             },
             (err) => {
                 console.log(err);
-
             }
         );
     }

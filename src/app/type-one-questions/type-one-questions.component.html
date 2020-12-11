@@ -1,32 +1,40 @@
 <div class="container">
-    <p>1. first question</p>
-    <form action="/action_page.php">
+    <p>{{qna.id}}. {{qna.question}}</p>
+    <form #answerForm="ngForm">
 
         <div class="radio">
             <label>
-                <input type="radio" name="optradio" checked>Option 1</label>
+                <input type="radio" name="optradio" [value]="qna.option1" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option1}}</label>
         </div>
         <div class="radio">
             <label>
-                <input type="radio" name="optradio">Option 2</label>
+                <input type="radio" name="optradio" [value]="qna.option2" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option2}}</label>
         </div>
         <div class="radio">
             <label>
-                <input type="radio" name="optradio">Option 3</label>
+                <input type="radio" name="optradio" [value]="qna.option3" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option3}}</label>
         </div>
         <div class="radio">
             <label>
-                <input type="radio" name="optradio">Option 4</label>
+                <input type="radio" name="optradio" [value]="qna.option4" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option4}}</label>
         </div>
 
-        <button type="submit" class="btn btn-primary">Review</button>
+        <button type="button" class="btn btn-primary" value="Review" [disabled]="!answerForm.form.valid || questionAnswered" (click)="navigateToReview()">Review</button>
 
-        <button type="submit" class="btn btn-primary">Skip</button>
+        <button type="button" class="btn btn-primary" value="Skip" (click)="navigateToSkip()" [disabled]="questionAnswered">Skip</button>
 
-        <button type="submit" class="btn btn-primary">Feedback</button>
+        <!--TO DO <button type="button" class="btn btn-primary">Feedback</button> -->
 
-        <button type="submit" class="btn btn-primary">Answer</button>
+        <button type="button" class="btn btn-primary" value="Answer" [disabled]="!answerForm.form.valid || questionAnswered" (click)="navigateToAnswer()">Answer</button>
+
+
+        <button type="button" class="btn btn-primary" (click)="navigateToResults()">Finish</button>
     </form>
-    <app-menu-of-questions></app-menu-of-questions>
-    <app-type-one-result></app-type-one-result>
+    <div>
+        <app-menu-of-questions></app-menu-of-questions>
+    </div>
+    <div *ngIf="questionAnswered">
+        <app-type-one-result [qna]="qna" [selectedAnswer]="selectedAnswer" [buttonObjArr]="buttonObj"></app-type-one-result>
+    </div>
 </div>
+<div [hidden]="!msg">{{info}}</div>

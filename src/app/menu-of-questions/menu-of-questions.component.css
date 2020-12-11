@@ -32,3 +32,36 @@
   #btndiv {
     margin: 100px 100px 100px 100px;
   }
+
+  .width-of-whole-grid {
+    margin-left: 20px;
+    width: 234px;
+  }
+
+  .grids-style {
+      height: 47px;
+      margin-right: 5px;
+      margin-top: 5px;
+      border: 1px solid black;
+      cursor: pointer;
+      line-height: 3;
+      font-size: 17px;
+  }
+
+  .answered-grid{
+    background-color: green;
+    color: aliceblue;
+  }
+
+  .wrong-answered-grid{
+    background-color: red;
+    color: blue;
+  }
+
+  .reviewed-grid{
+    background-color: yellow;
+  }
+
+  .skiped-or-unanswered-grid{
+    background-color: white;
+  }

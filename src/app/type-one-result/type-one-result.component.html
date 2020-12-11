@@ -1,6 +1,6 @@
 <div class="container">
-    <p>answer of question one</p>
-    <button type="button" class="btn btn-outline-secondary">Retry entire quiz</button>
-    <button type="button" class="btn btn-outline-secondary">Retry wrong questions</button>
-    <p>show status</p>
+    <p>{{qna.id}}.{{message}}</p>
+    <p>{{qna.answer}}</p>
+    <button type="button" class="btn btn-outline-secondary" (click)="findNextQn()">Next Question</button>
+    <div [hidden]="!msg">{{info}}</div>
 </div>

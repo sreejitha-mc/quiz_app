@@ -1,6 +1,6 @@
-<div class="container">
-    <p>List of question no and it's answers</p>
-    <button type="button" class="btn btn-outline-secondary">Retry entire quiz</button>
-    <button type="button" class="btn btn-outline-secondary">Retry wrong questions</button>
-    <p>show status</p>
+<div *ngIf="qna" class="container">
+    <div *ngFor="let quesnum of qna">
+        <p>{{quesnum.id}}.{{quesnum.answer}}</p>
+    </div>
+    <button type="button" class="btn btn-outline-secondary" (click)="navigateToStatus()">Status</button>
 </div>

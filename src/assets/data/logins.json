@@ -1,10 +1,14 @@
 [
     {
         "username": "admin",
-        "password": "admin"
+        "password": "admin",
+        "name": "Admin",
+        "mail": "admin@mail.info"
     },
     {
         "username": "user1",
-        "password": "user2pwd"
+        "password": "user1",
+        "name": "User1",
+        "mail": "user1@mail.info"
     }
 ]
