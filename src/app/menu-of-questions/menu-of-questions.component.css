@@ -34,10 +34,17 @@
   }
 
   .width-of-whole-grid {
-    margin-left: 20px;
-    width: 234px;
+    width: 267px;
+    border: 2px solid rgb(0, 183, 255);
+    margin-left: 190px;
+    margin-top: 60px;
   }
 
+  .width-of-whole-grid .row {
+    padding: 5px;
+    width: 107%;
+    margin-left: 0px;
+  }
   .grids-style {
       height: 47px;
       margin-right: 5px;

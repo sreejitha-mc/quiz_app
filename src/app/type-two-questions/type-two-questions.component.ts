@@ -25,6 +25,7 @@ export class TypeTwoQuestionsComponent implements OnInit {
     bObj = {} as ButtonObject;
     buttonObjArr = [] as ButtonObject[];
     questionAnswered: boolean;
+    trigger: boolean;
 
     constructor(
 
@@ -79,7 +80,7 @@ export class TypeTwoQuestionsComponent implements OnInit {
                         this.currentIndex = this.currentIndex + 1;
                         if (!this.qna[this.currentIndex]) {
                             this.msg = true;
-                            this.message = 'no more question to display,For completing the quiz click Finish';
+                            this.message = 'No more question to display, For completing the quiz click "Finish"';
                         }
                     }
                     const nextQues = data[this.currentIndex];
@@ -88,7 +89,7 @@ export class TypeTwoQuestionsComponent implements OnInit {
                     this.router.navigate([`type-two-questions`, this.qna.id]);
                 } else {
                     this.msg = true;
-                    this.message = 'no more question to display,For completing the quiz click Finish';
+                    this.message = 'No more question to display, For completing the quiz click "Finish"';
                 }
 
             },
@@ -165,6 +166,10 @@ export class TypeTwoQuestionsComponent implements OnInit {
 
     navigateToResults(): void {
         this.router.navigate([`/type-two-result`]);
+    }
+
+    triggerEvent(): void {
+        this.trigger = true;
     }
 
 }

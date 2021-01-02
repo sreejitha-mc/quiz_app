@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { User } from '../model/user.model';
 import { OptionType } from '../enum/option-type.enum';
 import { ButtonObject } from '../model/buttonObject.model';
+import { FeedbackForm } from '../model/feedbackForm.model';
 
 @Injectable({
     providedIn: 'root'
@@ -11,6 +12,7 @@ export class AppDataService {
     user = {} as User;
     selectedoption = {} as OptionType;
     buttonObjectArray = [] as ButtonObject[];
+    feedbackData = {} as FeedbackForm;
     constructor() { }
 
     setUserInfo(usr: User): void {
@@ -49,5 +51,13 @@ export class AppDataService {
     }
     clearObjectArrayInfo(): void {
         this.buttonObjectArray = [];
+    }
+
+    setFeedbackInfo(feedback: FeedbackForm): void {
+        this.feedbackData = feedback;
+    }
+
+    getFeedbackInfo(): FeedbackForm {
+        return this.feedbackData;
     }
 }

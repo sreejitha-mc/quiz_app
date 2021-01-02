@@ -1,0 +1,42 @@
+.whole-page {
+    margin-left: 500px;
+    margin-top: 145px;
+}
+
+.whole-page p {
+    font-size: 20px;
+}
+
+.section-one{
+    width: 50%;
+    float: left;
+}
+
+.options-shown {
+    margin-left: 40px;
+    font-size: 17px;
+}
+
+.buttons {
+    margin-top: 52px;
+    margin-bottom: -214px;
+}
+
+.menu-grid {
+    width: 50%;
+    float: left;
+}
+
+.result-of-question {
+    margin-top: 250px;
+    font-size: 17px;
+}
+
+.message-style{
+    margin-top: 290px;
+    font-size: 19px;
+}
+
+.buttons .btn {
+    margin-left: 5px;
+}

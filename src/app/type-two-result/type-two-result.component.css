@@ -1,0 +1,11 @@
+.whole-content{
+    text-align: justify;
+    margin-left: 500px;
+    margin-top: 150px;
+    font-size: 19px;
+}
+
+.whole-content .btn{
+    margin-left: 150px;
+    margin-top: 40px;
+}

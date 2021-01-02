@@ -65,7 +65,7 @@ export class TypeOneResultComponent implements OnInit {
                         this.currentIndex = this.currentIndex + 1;
                         if (!this.qna[this.currentIndex]) {
                             this.msg = true;
-                            this.info = 'no more question to display,For completing the quiz click Finish';
+                            this.info = 'No more question to display, For completing the quiz click "Finish"';
                         }
                     }
                     const nextQues = data[this.currentIndex];
@@ -74,7 +74,7 @@ export class TypeOneResultComponent implements OnInit {
                     this.router.navigate([`type-one-questions`, this.qna.id]);
                 } else {
                     this.msg = true;
-                    this.info = 'no more question to display,For completing the quiz click Finish';
+                    this.info = 'No more question to display, For completing the quiz click "Finish"';
                 }
 
             },

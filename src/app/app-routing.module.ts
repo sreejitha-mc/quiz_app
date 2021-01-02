@@ -18,7 +18,7 @@ const routes: Routes = [
     { path: 'status', component: StatusComponent },
     { path: 'menu-of-questions', component: MenuOfQuestionsComponent },
     { path: 'type-one-result', component: TypeOneResultComponent },
-    { path: 'type-two-result', component: TypeTwoResultComponent }
+    { path: 'type-two-result', component: TypeTwoResultComponent },
 
 ];
 

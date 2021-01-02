@@ -13,6 +13,7 @@ import { StatusComponent } from './status/status.component';
 import { MenuOfQuestionsComponent } from './menu-of-questions/menu-of-questions.component';
 import { TypeOneResultComponent } from './type-one-result/type-one-result.component';
 import { TypeTwoResultComponent } from './type-two-result/type-two-result.component';
+import { PopupformComponent } from './popupform/popupform.component';
 
 
 
@@ -28,6 +29,7 @@ import { TypeTwoResultComponent } from './type-two-result/type-two-result.compon
     MenuOfQuestionsComponent,
     TypeOneResultComponent,
     TypeTwoResultComponent,
+    PopupformComponent,
 
   ],
   imports: [
@@ -37,10 +39,12 @@ import { TypeTwoResultComponent } from './type-two-result/type-two-result.compon
     HttpClientModule
   ],
   exports: [
-    MenuOfQuestionsComponent
+    MenuOfQuestionsComponent,
+    PopupformComponent
   ],
   entryComponents: [
-    MenuOfQuestionsComponent
+    MenuOfQuestionsComponent,
+    PopupformComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

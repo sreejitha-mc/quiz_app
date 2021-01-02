@@ -1,6 +1,8 @@
 <div class="container">
-    <p>{{qna.id}}.{{message}}</p>
-    <p>{{qna.answer}}</p>
-    <button type="button" class="btn btn-outline-secondary" (click)="findNextQn()">Next Question</button>
-    <div [hidden]="!msg">{{info}}</div>
+    <p>Your answer is {{message}}</p>
+    <div class="align-answer">
+        <p>The answer is {{qna.answer}}</p>
+        <button type="button" class="btn btn-primary" (click)="findNextQn()">Next Question</button>
+        <div [hidden]="!msg">{{info}}</div>
+    </div>
 </div>

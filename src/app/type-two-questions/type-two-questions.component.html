@@ -1,35 +1,49 @@
-<div class="container">
-    <p>{{qna.id}}. {{qna.question}}</p>
-    <form #answerForm="ngForm">
-        <div class="radio">
-            <label>
-                <input type="radio" name="optradio" [value]="qna.option1" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option1}}</label>
-        </div>
-        <div class="radio">
-            <label>
-                <input type="radio" name="optradio" [value]="qna.option2" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option2}}</label>
-        </div>
-        <div class="radio">
-            <label>
-                <input type="radio" name="optradio" [value]="qna.option3" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option3}}</label>
-        </div>
-        <div class="radio">
-            <label>
-                <input type="radio" name="optradio" [value]="qna.option4" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option4}}</label>
-        </div>
+<div class="container whole-page">
+    <div class="section-one">
+        <p>{{qna.id}}. {{qna.question}}</p>
+        <form #answerForm="ngForm">
+            <div class="options-shown">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optradio" [value]="qna.option1" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option1}}</label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optradio" [value]="qna.option2" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option2}}</label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optradio" [value]="qna.option3" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option3}}</label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optradio" [value]="qna.option4" required [(ngModel)]="selectedAnswer" class="form-check-input">{{qna.option4}}</label>
+                </div>
+            </div>
+            <div class="buttons">
 
-        <button type="button" class="btn btn-primary" value="Review" [disabled]="!answerForm.form.valid || questionAnswered" (click)="navigateToReview()">Review</button>
+                <button type="button" class="btn btn-primary" value="Review" [disabled]="!answerForm.form.valid || questionAnswered" (click)="navigateToReview()">Review</button>
 
-        <button type="button" class="btn btn-primary" value="Skip" (click)="navigateToSkip()" [disabled]="questionAnswered">Skip</button>
+                <button type="button" class="btn btn-primary" value="Skip" (click)="navigateToSkip()" [disabled]="questionAnswered">Skip</button>
 
-        <!-- TO DO<button type="submit" class="btn btn-primary">Feedback</button> -->
-
-        <button type="button" class="btn btn-primary" value="Answer" [disabled]="!answerForm.form.valid || questionAnswered" (click)="navigateToAnswer()">Answer</button>
+                <button type="submit" class="btn btn-primary" (click)="triggerEvent()">Feedback</button>
 
 
-        <button type="button" class="btn btn-primary" (click)="navigateToResults()">Finish</button>
-    </form>
-    <app-menu-of-questions></app-menu-of-questions>
+
+                <button type="button" class="btn btn-primary" value="Answer" [disabled]="!answerForm.form.valid || questionAnswered" (click)="navigateToAnswer()">Answer</button>
+
+
+                <button type="button" class="btn btn-primary" (click)="navigateToResults()">Finish</button>
+            </div>
+        </form>
+        <div [hidden]="!msg" class="message-style">{{message}}</div>
+    </div>
+    <div class="menu-grid">
+        <app-menu-of-questions></app-menu-of-questions>
+    </div>
+    <div *ngIf="trigger">
+        <app-popupform [id]="qna.id" [trigger]="trigger"></app-popupform>
+    </div>
+
 
 </div>
-<div [hidden]="!msg">{{message}}</div>

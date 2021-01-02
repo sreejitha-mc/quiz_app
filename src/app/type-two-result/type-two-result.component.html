@@ -1,6 +1,6 @@
-<div *ngIf="qna" class="container">
+<div *ngIf="qna" class="container whole-content">
     <div *ngFor="let quesnum of qna">
         <p>{{quesnum.id}}.{{quesnum.answer}}</p>
     </div>
-    <button type="button" class="btn btn-outline-secondary" (click)="navigateToStatus()">Status</button>
+    <button type="button" class="btn btn-primary" (click)="navigateToStatus()">Status</button>
 </div>

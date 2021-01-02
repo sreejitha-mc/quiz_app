@@ -1,0 +1,9 @@
+.whole-page{
+    margin-left: 500px;
+    margin-top: 150px;
+    font-size: 20px;
+}
+
+.whole-page .btn {
+    margin-top: 40px;
+}
