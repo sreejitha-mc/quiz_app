@@ -58,11 +58,11 @@ export class PopupformComponent implements OnChanges, OnInit {
   }
 
   private openModel(): void {
-    $('#loginmodal').modal('show');
+    $('#feedbackformModel').modal('show');
   }
 
   private closeModel(): void {
-    $('#loginmodal').modal('hide');
+    $('#feedbackformModel').modal('hide');
   }
 
 }
